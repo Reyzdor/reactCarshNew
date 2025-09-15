@@ -3,6 +3,7 @@
   src: url('./San\ Francisco\ Pro\ Display/');
 }
 
+
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -13,13 +14,101 @@ body {
   box-sizing: border-box;
 }
 
+header {
+  border-radius: 2px;
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.9); 
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); 
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: 70px;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+#container {
+  width: 100%;
+  height: 1080px;
+  background: linear-gradient(135deg, 
+    #f8fafc 0%, 
+    #e0e7ff 25%, 
+    #dbeafe 50%, 
+    #c7d2fe 75%, 
+    #e0e7ff 100%
+  );
+  background-size: 400% 400%;
+  animation: shimmer 8s ease-in-out infinite;
+
+}
+
+#container-inner {
+  padding: 14px 30px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  height: 100%;
+}
+
 #logo {
   font-family: 'SF-Pro', sans-serif;
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 900;
   background: linear-gradient(to right, #4f46e5, #7c3aed, #4338ca);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  cursor: pointer;
 }
 
+#button {
+  font-family: 'SF-Pro', sans-serif;
+  font-size: 15px;
+  color: #FFFFFF;
+  font-weight: 450;
+  width: 100px;
+  height: 40px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(to right, #4f46e5, #7c3aed);
+  transition: all 0.515s ease;
+}
+
+#button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+#sign {
+  border-radius: 12px;
+  border: none;
+  font-family: 'SF-Pro', sans-serif;
+  font-size: 17px;
+  font-weight: 450;
+  width: 100px;
+  height: 40px;
+  color: #000;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  transition: all 0.515s ease;
+}
+
+#sign:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  transform: scale(1.05);
+  color: #4338ca;
+  background-color: #c7d2fe;;
+}
+
+#input {
+  width: 400px;
+  height: 40px;
+  border-radius: 10px;
+  border: 0.5px solid #D3D3D3;
+  background-color: linear-gradient(to right, #4f46e5, #7c3aed, #4338ca);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}

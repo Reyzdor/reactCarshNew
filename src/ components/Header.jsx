@@ -1,15 +1,18 @@
 import  Button  from './Button'
+import ButtonSign from './ButtonSing'
 
 export default function Header() {
     return (
-        <header>
             <div id="container">
-                <h1 id="logo">CarNow</h1>
-                <input type="text" placeholder="Поиск автомобилей по локации, модель..." />
-                <span id="signin">Sign In</span>
-                <Button />
+                <header>
+                    <div id="container-inner">
+                        <span id="logo">CarNow</span>
+                        <input id='input' type="text" placeholder="Поиск автомобилей по локации, модель..." />
+                        <ButtonSign />
+                        <Button />
+                    </div>
+                </header>
             </div>
-        </header>
     )
 }
 
