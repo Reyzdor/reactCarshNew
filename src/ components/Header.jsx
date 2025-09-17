@@ -18,30 +18,33 @@ export default function Header() {
                             }} />
                         </div>
                         <span id="logo">CarNow</span>
-                        <div style={{position: 'relative', display: 'inline-block'}}>
-                        <input 
-                            id='input' 
-                            type="text" 
-                            placeholder="Поиск автомобилей по локации, модель..."
-                            style={{paddingLeft: '40px',
-                                    width: '450px'
-                            }} 
-                        />
-                        <img 
-                            src={searchIcon} 
-                            alt="search" 
-                            style={{
-                                position: 'absolute',
-                                left: '12px',
-                                top: '45%',
-                                transform: 'translateY(-50%)',
-                                width: '15px',
-                                height: '15px',
-                                color: '#888',
-                                pointerEvents: 'none' 
-                            }} 
-                        />
-                    </div>
+                        <div style={{position: 'absolute',  left: '50%',
+                            transform: 'translateX(-50%)'}}>
+                        <div id="input-container">
+                                <input 
+                                    id='input' 
+                                    type="text" 
+                                    placeholder="Поиск автомобилей по локации, модель..."
+                                    style={{paddingLeft: '40px',
+                                            width: '450px'
+                                    }} 
+                                />
+                                <img 
+                                    src={searchIcon} 
+                                    alt="search" 
+                                    style={{
+                                        position: 'absolute',
+                                        left: '12px',
+                                        top: '45%',
+                                        transform: 'translateY(-50%)',
+                                        width: '15px',
+                                        height: '15px',
+                                        color: '#888',
+                                        pointerEvents: 'none' 
+                                    }} 
+                                />
+                            </div>
+                        </div>
                         <div id="button-container">
                         <ButtonSign />
                         <Button />
