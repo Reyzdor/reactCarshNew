@@ -26,7 +26,7 @@ export default function Header() {
                                     type="text" 
                                     placeholder="Поиск автомобилей по локации, модель..."
                                     style={{paddingLeft: '40px',
-                                            width: '450px'
+                                            width: '450px', fontFamily: 'Poppins',
                                     }} 
                                 />
                                 <img 
