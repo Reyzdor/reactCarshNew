@@ -1,4 +1,5 @@
 import '../css-components/Main.css'
+import Header from './Header'
 import TextMain from './TextMain'
 
 export default function Main() {
@@ -22,7 +23,6 @@ export default function Main() {
                     </div>
                 </div>
             </div>
-            
             <TextMain />
         </div>
     )

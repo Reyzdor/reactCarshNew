@@ -1,7 +1,7 @@
 import  Button  from './Button'
 import ButtonSign from './ButtonSing'
-import searchIcon from '/Users/roman/Desktop/reactAndVite/vite-project/src/assets/search1.svg'
-import carImage from '/Users/roman/Desktop/reactAndVite/vite-project/src/assets/car.png'
+import searchIcon from '../assets/search1.svg'
+import carImage from '../assets/car.png'
 
 export default function Header() {
     return (
