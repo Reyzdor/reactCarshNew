@@ -20,7 +20,8 @@ export default function Header() {
                         <span id="logo">CarNow</span>
                         <div style={{position: 'absolute',  left: '50%',
                             transform: 'translateX(-50%)'}}>
-                        <div id="input-container">
+                        <div id="input-container"
+                        style={{fontFamily: 'Poppins'}}>
                                 <input 
                                     id='input' 
                                     type="text" 

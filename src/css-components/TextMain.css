@@ -1,20 +1,16 @@
-*, *::before, *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-}
+/* УДАЛИТЬ эти строки из TextMain.css:
+@import url('https://fonts.googleapis.com/css2?family=Poppins...');
+*, *::before, *::after {...}
+body {...}
+*/
 
 .text-overlay h1,
 .text-overlay p {
-    font-family: 'Poppins', sans-serif !important;
+    font-family: 'Poppins', sans-serif;
 }
 
-.h1, .future, .description, .description {
-    font-family: 'Poppins', sans-serif  ;
+.h1, .future, .description {
+    font-family: 'Poppins', sans-serif;
 }
 
 .text-overlay {
@@ -32,7 +28,6 @@ body {
 }
 
 #drive {
-    font-family: 'Poppins', sans-serif;
     font-size: 50px;
     font-weight: 400;
     color: #1e293b;
@@ -46,7 +41,6 @@ body {
 }
 
 #description {
-    font-family: 'Poppins', sans-serif;
     opacity: 0;
     font-size: 18px;
     color: #475569;
