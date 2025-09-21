@@ -1,5 +1,5 @@
 export default function Button() {
     return (
-        <button id="button">Sign Up</button>
+        <button id="button">Скачать</button>
     )
 }

@@ -1,5 +1,4 @@
 import '../css-components/TextMain.css'
-import '../App.css'
 
 export default function TextMain() {
     return (

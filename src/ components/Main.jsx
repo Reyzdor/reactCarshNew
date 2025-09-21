@@ -1,5 +1,6 @@
 import '../css-components/Main.css'
 import TextMain from './TextMain'
+import Window from './Window'
 
 export default function Main() {
     return (
@@ -24,6 +25,8 @@ export default function Main() {
             </div>
             
             <TextMain />
+            <Window />
+
         </div>
     )
 }

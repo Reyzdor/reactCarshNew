@@ -42,13 +42,13 @@
     height: 80px;
     z-index: 2;
     position: relative;
-    top: -40.5%;
+    top: -33.5%;
     background-color: #4b5b73;
     opacity: 80%;
 }
 #road-line {
     position: relative;
-    top: -44.3%;
+    top: -37.3%;
     z-index: 3;
     left: 0;
     width: 100%;
@@ -81,7 +81,7 @@
 
 .car-container {
     position: relative;
-    top: -51%;
+    top: -44.5%;
     bottom: 120px; 
     left: 50%;
     z-index: 4;

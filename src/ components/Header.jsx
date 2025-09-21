@@ -1,7 +1,7 @@
 import  Button  from './Button'
-import ButtonSign from './ButtonSing'
 import searchIcon from '/Users/roman/Desktop/reactAndVite/vite-project/src/assets/search1.svg'
 import carImage from '/Users/roman/Desktop/reactAndVite/vite-project/src/assets/car.png'
+import ImgLogin from './ImgLogin'
 
 export default function Header() {
     return (
@@ -17,7 +17,7 @@ export default function Header() {
                                 top: '8px'
                             }} />
                         </div>
-                        <span id="logo">CarNow</span>
+                        <span id="logo">АвтоРядом</span>
                         <div style={{position: 'absolute',  left: '50%',
                             transform: 'translateX(-50%)'}}>
                         <div id="input-container"
@@ -47,8 +47,8 @@ export default function Header() {
                             </div>
                         </div>
                         <div id="button-container">
-                        <ButtonSign />
                         <Button />
+                        <ImgLogin />
                         </div>
                     </div>
                 </header>
