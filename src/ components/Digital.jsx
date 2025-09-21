@@ -1,10 +1,9 @@
 import { useState, useEffect } from "react";
 
 export default function DigitalScroll({ value, suffix = '' }) {
-    const [displayValue, setDisplayValue] = useState(null); // меняем на null
+    const [displayValue, setDisplayValue] = useState(null); 
 
     useEffect(() => {
-        // Пропускаем анимацию если значение null
         if (value === null || value === undefined) return;
         
         let start = 0;
@@ -26,7 +25,6 @@ export default function DigitalScroll({ value, suffix = '' }) {
         return () => clearInterval(timer);
     }, [value]);
 
-    // Показываем пустоту вместо 0 до начала анимации
     if (displayValue === null) {
         return <span className="digit-scroll"></span>;
     }
