@@ -29,7 +29,7 @@ export default function Header() {
                                     style={{paddingLeft: '40px',
                                             width: '450px', fontFamily: 'Poppins',
                                     }} 
-                                /
+                                />
                                 <img 
                                     src={searchIcon} 
                                     alt="search" 
