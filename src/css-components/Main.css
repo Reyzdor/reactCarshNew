@@ -2,7 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    }
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
 
 #container {
     height: 1080px;
@@ -14,11 +19,10 @@
 #mountains {
     overflow: hidden;
     position: absolute;
-    width: 125%;
+    width: 115%;
     height: 500px;
     top: -80%;
-    left: -12.5%; 
-    transform: translateX(20px);
+    left: -120px;
     background-color: #9ca3af; 
     flex-shrink: 0;
     opacity: 30%;
@@ -42,10 +46,11 @@
     height: 80px;
     z-index: 2;
     position: relative;
-    top: -33.5%;
+    top: -34%; /* Дорога остается на месте */
     background-color: #4b5b73;
     opacity: 80%;
 }
+
 #road-line {
     position: relative;
     top: -37.3%;
@@ -82,10 +87,7 @@
 .car-container {
     position: relative;
     top: -44.5%;
-    bottom: 120px; 
-    left: 50%;
     z-index: 4;
-    transform: translateX(-50%);
     animation: carMove 20s linear infinite;
 }
 
@@ -176,10 +178,10 @@
 
 @keyframes carMove {
     0% {
-        left: 40%;
+        transform: translateX(-100px); /* Начинаем слева */
     }
     100% {
-        left: 150%;
+        transform: translateX(100vw); /* Заканчиваем справа за экраном */
     }
 }
 
@@ -221,4 +223,3 @@
         bottom: 30px;
     }
 }
-

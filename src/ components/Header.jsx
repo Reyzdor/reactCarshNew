@@ -1,6 +1,6 @@
 import  Button  from './Button'
-import searchIcon from '/Users/roman/Desktop/reactAndVite/vite-project/src/assets/search1.svg'
-import carImage from '/Users/roman/Desktop/reactAndVite/vite-project/src/assets/car.png'
+import searchIcon from '../assets/search1.svg'
+import carImage from '../assets/car.png'
 import ImgLogin from './ImgLogin'
 
 export default function Header() {
@@ -21,13 +21,13 @@ export default function Header() {
                         <div style={{position: 'absolute',  left: '50%',
                             transform: 'translateX(-50%)'}}>
                         <div id="input-container"
-                        style={{fontFamily: 'Poppins'}}>
+                        style={{fontFamily: 'Roboto'}}>
                                 <input 
                                     id='input' 
                                     type="text" 
                                     placeholder="Поиск автомобилей по локации, модель..."
                                     style={{paddingLeft: '40px',
-                                            width: '450px', fontFamily: 'Poppins',
+                                            width: '450px', fontFamily: 'Roboto',
                                     }} 
                                 />
                                 <img 
